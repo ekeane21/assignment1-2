@@ -1,3 +1,6 @@
+import org.joda.time.DateTime;
+
+
 public class addStudents {
     String data;
     public addStudents(String data){
@@ -26,14 +29,13 @@ public class addStudents {
             people1[1]= new Student("Bella","141195",20);  
             people1[2]= new Student("Milo","020595",21);  
     
+        Module[] Engineering = new Module[3];
+        Engineering[0] = new Module("Programming", "CT101", people1);
+        Engineering[1] = new Module("Electronics Design", "EE123", people2);
+        Engineering[2] = new Module("Quantics", "QR145", people3);
+        Engineering[3] = new Module("German Humanities", "GH789", people4);
         
-        Module CT101 = new Module("Programming", "CT101", people1);
-        Module EE123 = new Module("Electronics Design", "EE123", people2);
-        Module QR145 = new Module("Quantics", "QR145", people3);
-        Module GH789 = new Module("German Humanities", "GH789", people4);
+                CourseProgramme programme1 = new CourseProgramme("Engineering", Engineering, DateTime.parse("11/15/2013 08:00:00"), DateTime.parse("11/15/2014 08:00:00"));
         
-        CourseProgramme programme1 = new CourseProgramme();
-        
-        
-    }   
+        }
 }

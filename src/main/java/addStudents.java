@@ -29,7 +29,7 @@ public class addStudents {
                   
         Module[] Engineering = new Module[3];
         Engineering[0] = new Module("Programming", "CT101", people1);
-        Engineering[1] = new Module("Electronics Design", "EE123", people2);
+        Engineering[1] = new Module("Elnics Design", "EE123", people2);
         Engineering[2] = new Module("Algebra", "QR145", people3);
         
         DateTime startdate = new DateTime(2013, 3, 10, 1, 58);

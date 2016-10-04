@@ -7,6 +7,7 @@ public class addStudents {
     public addStudents(String data){
     this.data=data;
         }
+    
     public static void main(String[] args){
         Student[] people1 = new Student[5];
             people1[0]= new Student("Bob","010296",20);   
